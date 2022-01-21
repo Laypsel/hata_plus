@@ -1,0 +1,298 @@
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+}
+
+sup {
+    font-size: 0.6em;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-color: #1f1f56;
+    padding: 15px 0;
+}
+
+.header nav {
+    display: flex;
+    justify-content:space-between;
+}
+
+.header ul {
+    margin: 0 -12px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.header li {
+    display: inline-block;
+    padding: 0 12px;
+    
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.menu a {
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #b1b1d2;
+    font-family: "Arial";
+}
+
+.menu a:hover {
+    color: #fd8300;
+}
+
+.soc a {
+    display: block;
+    background: url(images/sprite.png) no-repeat;
+}
+
+a.fb {
+    background-position: 0 0;
+    width: 10px;
+    height: 19px;
+
+}
+
+a.tw {
+    background-position: -12px 0;
+    width: 18px;
+    height: 15px;
+}
+
+a.in {
+    background-position: -32px 0;
+    width: 19px;
+    height: 19px;
+}
+
+a.fb:hover{
+    background-position: 0 -23px;
+    width: 10px;
+    height: 19px;
+}
+
+a.tw:hover {
+    background-position: -12px -23px;
+    width: 18px;
+    height: 15px;
+}
+
+a.in:hover {
+    background-position: -32px -23px;
+    width: 19px;
+    height: 19px;
+}
+
+
+.important {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.important p {
+    margin: 10px 0;
+}
+
+.important a {
+    color: #000;
+    position: relative;
+    text-decoration: none;
+}
+
+.tel::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    width: 16px;
+    height: 17px;
+    background: url(images/sprite.png) no-repeat;
+    background-position: -53px 0;
+
+}
+
+.em {
+    text-decoration: underline;
+}
+
+.em::before{
+    content: '';
+    position: absolute;
+    left: -30px;
+    width: 17px;
+    height: 13px;
+    background: url(images/sprite.png) no-repeat;
+    background-position: -71px 0;
+}
+
+.sk::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    width: 18px;
+    height: 19px;
+    background: url(images/sprite.png) no-repeat;
+    background-position: -90px 0;
+}
+
+.order a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+    border-radius: 25px;
+    border: 2px solid #fd8300;
+    display: inline-block;
+    padding: 12px 27px;
+    text-decoration: none;
+}
+
+.order a:hover {
+    background-color: #fd8300;
+    color: #fff;
+
+}
+
+.pic {
+    background-image: url(images/image.png);
+    text-align: center;
+    padding: 45px 0 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.big {
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    margin: 12px;
+}
+
+.pic .tx {
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    font-family: "Arial";
+    text-align: center;
+}
+
+.pic b {
+    font-size: 40px;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.pic .gr {
+    font-size: 24px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.content {
+    display: flex;
+    justify-content:space-between;
+    margin: 24px auto;
+}
+
+
+.companyinfo a {
+    color:#fd8300;
+}
+
+.info {
+    margin: auto 28px;
+}
+.houses {
+    display: flex;
+    justify-content:space-between;
+    text-decoration: none;
+}
+
+.houses figure {
+    margin: 0;
+}
+
+.projects {
+    width: 219px;
+    
+}
+
+.projects p {
+    border-radius: 3px;
+    background-color: #1f1f56;
+    color: #fff;
+    padding: 15px 15px;
+    margin: 0;
+}
+
+.projects ul {
+    background-color: #e4e4ec;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.projects a {
+    display: block;
+    text-decoration: none;
+    color: #25252c;
+    padding: 15px 15px;
+}
+
+.projects a:hover {
+    background-color:#fd8300;
+    color: #fff;
+}
+
+.pod li:hover a {
+    background-color: #cecedd;
+}
+
+.footer {
+    background-color: #ededf5;
+}
+
+.footer nav {
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+.footer a {
+    color: #000;
+    position: relative;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #fd8300;
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 13px;
+    line-height: 18px;
+    background-color: #dcdce6;
+    text-align: center;
+    color: #9999a6;
+    margin: 0;
+    padding: 16px 0;
+}
