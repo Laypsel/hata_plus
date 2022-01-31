@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     margin: 0;
     font-family: "Arial", sans-serif;
@@ -5,6 +14,12 @@ body {
 
 sup {
     font-size: 0.6em;
+}
+
+hr {
+    border: 1px solid transparent;
+    border-top-color: #e4e4ec;
+    margin: 30px 0;
 }
 
 .wrapper {
@@ -20,7 +35,7 @@ sup {
 
 .header nav {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 .header ul {
@@ -32,7 +47,7 @@ sup {
 .header li {
     display: inline-block;
     padding: 0 12px;
-    
+
 }
 
 .header a {
@@ -75,7 +90,7 @@ a.in {
     height: 19px;
 }
 
-a.fb:hover{
+a.fb:hover {
     background-position: 0 -23px;
     width: 10px;
     height: 19px;
@@ -96,7 +111,7 @@ a.in:hover {
 
 .important {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 0;
 }
@@ -106,9 +121,18 @@ a.in:hover {
 }
 
 .important a {
-    color: #000;
+    color: #25252c;
     position: relative;
     text-decoration: none;
+}
+
+.phone a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
 }
 
 .tel::before {
@@ -126,7 +150,7 @@ a.in:hover {
     text-decoration: underline;
 }
 
-.em::before{
+.em::before {
     content: '';
     position: absolute;
     left: -30px;
@@ -157,6 +181,7 @@ a.in:hover {
     display: inline-block;
     padding: 12px 27px;
     text-decoration: none;
+    transition: all 0.5s ease;
 }
 
 .order a:hover {
@@ -208,21 +233,47 @@ a.in:hover {
 
 .content {
     display: flex;
-    justify-content:space-between;
-    margin: 24px auto;
+    justify-content: space-between;
+    margin: 25px auto 45px;
 }
 
+.content h1,
+.content h2 {
+    font-size: 30px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
 
-.companyinfo a {
-    color:#fd8300;
+.content h2 {
+    font-size: 24px;
+}
+
+.content p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+}
+
+.content a {
+    color: #fd8300;
+}
+
+.content a:hover {
+    text-decoration: none;
+}
+
+.content_page {
+    width: 100%;
 }
 
 .info {
-    margin: auto 28px;
+    max-width: 714px;
 }
+
 .houses {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     text-decoration: none;
 }
 
@@ -230,13 +281,30 @@ a.in:hover {
     margin: 0;
 }
 
+.houses h3 {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1f1f56;
+}
+
+.houses p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+}
+
 .projects {
     width: 219px;
-    
+}
+
+.projects nav {
+    border-radius: 3px;
+    overflow: hidden;
 }
 
 .projects p {
-    border-radius: 3px;
     background-color: #1f1f56;
     color: #fff;
     padding: 15px 15px;
@@ -257,9 +325,51 @@ a.in:hover {
     padding: 15px 15px;
 }
 
-.projects a:hover {
-    background-color:#fd8300;
+.category>li:hover>a {
+    background-color: #fd8300;
     color: #fff;
+
+}
+
+.category>li+li {
+    border-top: 1px solid #cdcddd;
+}
+
+.category a {
+    position: relative;
+    font-size: 14px;
+}
+
+.category>li>a::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: 15px;
+    transition: all 0.5s ease;
+    box-sizing: border-box;
+    top: 20px;
+}
+
+.category>li:hover a::after {
+    border-color: #fff;
+    transform: rotate(45deg);
+}
+
+.category li:hover .pod {
+    display: block;
+}
+
+.pod {
+    display: none;
+}
+
+.pod a {
+    padding-left: 30px;
+    color: #666;
 }
 
 .pod li:hover a {
@@ -268,21 +378,34 @@ a.in:hover {
 
 .footer {
     background-color: #ededf5;
+    padding: 25px 0 15px;
 }
 
 .footer nav {
     display: flex;
-    justify-content:space-between;
-    
+    justify-content: space-between;
+
 }
 
 .footer a {
-    color: #000;
+    color: #25252c;
     position: relative;
     text-decoration: none;
 }
 
-.footer a:hover {
+.inf {
+    list-style: none;
+    padding: 0;
+}
+
+.inf a {
+    font-size: 14px;
+    line-height: 26px;
+    color: #666;
+    text-decoration: none;
+}
+
+.inf a:hover {
     color: #fd8300;
     text-decoration: underline;
 }
