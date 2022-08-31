@@ -80,7 +80,7 @@ select {
   position: absolute;
   width: 30px;
   height: 4px;
-  background-color: #777;
+  background-color: #fff;
   border-radius: 5px;
   top: 50%;
   transition: box-shadow .25s ease-in-out;
@@ -261,7 +261,7 @@ a.in:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20rem 0;
+    padding: 20rem 15rem;
     flex-wrap: wrap;
     row-gap: 10rem;
     column-gap: 28rem;
@@ -526,7 +526,7 @@ a.in:hover {
     justify-content: center;
     text-decoration: none;
     flex-wrap: wrap;
-    row-gap: 10rem;
+    row-gap: 28rem;
     column-gap: 28rem;
 }
 
@@ -563,7 +563,7 @@ a.in:hover {
 
 .projects {
     min-width: 219rem;
-    padding-top: 10rem;
+    padding-top: 30rem;
 }
 
 .projects nav {
@@ -794,7 +794,7 @@ a.in:hover {
     padding-top: 10rem;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 353px) {
     .phone, .contacts {
         padding-left: 22px;
     }
@@ -808,19 +808,19 @@ a.in:hover {
     .initials input {
         margin-bottom: 0;
     }
-}
-
-@media screen and (min-width: 425px) {
-    .phone, .contacts {
-        padding-left: 22px;
-    }
 
     .contact_info_block {
         column-gap: 40rem;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) {
+    .phone, .contacts {
+        padding-left: 22px;
+    }
+}
+
+@media screen and (min-width: 720px) {
     .hamburger {
         display: none;
     }
@@ -836,6 +836,19 @@ a.in:hover {
 
     .menu a {
         padding: 2rem 4rem;
+    }
+
+    .companyinfo h1 {
+        font-size: 24rem;
+        text-align: left;
+    }
+
+    .footer nav {
+        justify-content: space-between;   
+    }
+
+    .content h2 {
+        text-align: left;
     }
 
     .table td:last-child {
@@ -859,6 +872,10 @@ a.in:hover {
         justify-content: space-between;
         flex-wrap: nowrap;
     }
+
+    .contact_info_block {
+        justify-content: space-between;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -866,17 +883,22 @@ a.in:hover {
         justify-content: space-between;
     }
 
-    .footer nav {
-        justify-content: space-between;   
+    .projects {
+        padding-top: 10rem;
     }
 
-    .companyinfo h1 {
-        font-size: 24rem;
-        text-align: left;
+    .line {
+        position: relative;
     }
-
-    .content h2 {
-        text-align: left;
+    
+    .line::before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 51px;
+        background-color: #e4e4ec;
+        right: -30rem;
+        bottom: 11rem;
     }
 
     .contact_info_block {
