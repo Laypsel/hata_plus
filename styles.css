@@ -17,7 +17,7 @@ body {
 }
 
 sup {
-    font-size: 0.6rem;
+    font-size: 0.6em;
 }
 
 hr {
@@ -391,8 +391,8 @@ a.in:hover {
 }
 
 .pic .gr {
-    font-size: 24rem;
-    line-height: 24rem;
+    font-size: 24px;
+    line-height: 24px;
     color: #fd8300;
     font-weight: bold;
     font-family: "Arial";
@@ -446,10 +446,6 @@ a.in:hover {
     color: #25252c;
 }
 
-.call {
-
-}
-
 .call p {
     color: #666;
 }
@@ -467,7 +463,6 @@ a.in:hover {
     width: 100%;
     border-radius: 3px;
     overflow: hidden;
-    table-layout: fixed;
     overflow-x: scroll;
     display: block;
 }
@@ -702,9 +697,9 @@ a.in:hover {
 .contact_info_block {
     font-size: 14rem;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
-    text-align: center;
+    text-align: left;
 }
 
 .contact_info_block a {
@@ -726,6 +721,7 @@ a.in:hover {
 
 .map {
     width: 94%;
+    height: 300rem;
     padding-bottom: 40rem;
 }
 
@@ -736,7 +732,7 @@ a.in:hover {
 }
 
 .form {
-    width: 50%;
+    width: 100%;
     padding-bottom: 44rem;
 }
 
@@ -757,10 +753,6 @@ a.in:hover {
 .form textarea::-webkit-input-placeholder {
     color: #9999a6;
     font-style: italic;
-}
-
-.initials {
-    margin-bottom: 0;
 }
 
 .initials label {
@@ -798,12 +790,23 @@ a.in:hover {
 }
 
 .send label {
+    display: block;
     padding-top: 10rem;
 }
 
 @media screen and (min-width: 375px) {
     .phone, .contacts {
         padding-left: 22px;
+    }
+
+    .initials {
+        margin-bottom: 9rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .initials input {
+        margin-bottom: 0;
     }
 }
 
@@ -818,6 +821,23 @@ a.in:hover {
 }
 
 @media screen and (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        position: static;
+    }
+
+    .menu>li + li {
+        border: none;
+      }
+
+    .menu a {
+        padding: 2rem 4rem;
+    }
+
     .table td:last-child {
         width: 24rem;
     }
@@ -867,5 +887,10 @@ a.in:hover {
 
     .phone {
         padding-left: 0;
+    }
+
+    .send label {
+        display: inline-block;
+        padding-left: 30rem;
     }
 }
