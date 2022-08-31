@@ -212,7 +212,7 @@ nav {
 
 .soc a {
     display: block;
-    background: url(images/sprite.png) no-repeat;
+    background: url(../images/sprite.png) no-repeat;
 }
 
 a.fb {
@@ -303,7 +303,7 @@ a.in:hover {
 .tel::before {
     width: 16px;
     height: 17px;
-    background: url(images/sprite.png) no-repeat;
+    background: url(../images/sprite.png) no-repeat;
     background-position: -53px 0;
 
 }
@@ -317,7 +317,7 @@ a.in:hover {
 .em::before {
     width: 17px;
     height: 13px;
-    background: url(images/sprite.png) no-repeat;
+    background: url(../images/sprite.png) no-repeat;
     background-position: -71px 0;
 }
 
@@ -329,7 +329,7 @@ a.in:hover {
 .sk::before {
     width: 18px;
     height: 19px;
-    background: url(images/sprite.png) no-repeat;
+    background: url(../images/sprite.png) no-repeat;
     background-position: -90px 0;
 }
 
@@ -358,7 +358,7 @@ a.in:hover {
 }
 
 .pic {
-    background-image: url(images/image.png);
+    background-image: url(../images/image.png);
     text-align: center;
     padding: 45rem 0 25rem;
     background-repeat: no-repeat;
